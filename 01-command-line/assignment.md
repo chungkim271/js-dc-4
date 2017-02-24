@@ -3,6 +3,8 @@
 * [Introduction, Eloquent JavaScript](http://eloquentjavascript.net/00_intro.html)
 * [Chapter 1, Eloquent JavaScript](http://eloquentjavascript.net/01_values.html)
 
+Try to have fun and not think about Git too much ...
+
 **Take a screenshot when you finish Try Git and add the image to your pull request!**
 
 # Extra:
