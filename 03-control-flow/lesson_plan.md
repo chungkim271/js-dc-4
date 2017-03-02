@@ -12,31 +12,6 @@
 - Closing Questions / Tying up loose ends
 - Exit Tickets
 
-## Advanced Git
-- With our basic pull and push model of working with git, we don't have a way of maintaining our own copies of a repo, with our own changes, independent of those working the original repository.
-
-### Forking
-- Go to github repo, https://github.com/ga-students/JS-DC-3
-- click 'Fork'
-- pull fork locally
-- make changes (i.e. copy our homework into this repository)
-- push up to remote
-
-### Pull Requests
-- go to original repo
-- click 'New Pull Request'
-- select 'compare across forks'
-- select which branches we'd like to compare
-- create new pull request
-
-### Setting upstream master
-- `git remote add upstream https://github.com/ga-students/JS-DC-3`
-- `git pull upstream master`
-
-
-## Review: Data Types and Arrays
-
-
 ## Introduction to Control Flow
 Programming is often described as writing and following a recipe. Recipes are a metaphor that we use to describe what we're doing when we're programing: taking a complex task and breaking it down into small and discrete steps that we can describe to a computer, so that the computer can not only follow those tasks, but do so with incredible speed and precision on a huge quantity of data.
 
@@ -63,7 +38,7 @@ console.log( 'linear' )
 console.log( 'control' )
 console.log( 'flow' )
 console.log( 'in' )
-console.log( 'action.' )
+console.log( 'action' )
 ```
 
 We would expect each line to be `console.log`ed, in order.

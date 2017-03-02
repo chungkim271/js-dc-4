@@ -89,6 +89,9 @@
 // console.log( 'in' )
 // console.log( 'action.' )
 
+//
+// Exercise #1!
+//
 
 //
 // 3. Loops

@@ -80,9 +80,10 @@ In this lesson, we'll cover the basics of navigating the file system on your com
 - [Slides](https://ga-students.github.io/js-dc-4/01-command-line)
 - [Assignment](01-command-line-JS/assignment.md)
 - [Lesson Notes](01-command-line-JS/lesson_plan.md)
-
+- [Lesson](https://www.youtube.com/watch?v=Tf3uu66NAdM)
 
 ### Class 02: Data Types
+Data types are the most atomic unit of any program. Javascript has many basic data types, which we cover in this lesson, and a couple of complex data types. We'll be introduced to Arrays at the end of the class as our first complex data type.
 
 #### Learning Objectives
 - Describe the concept of a "data type" and how it relates to variables
@@ -91,11 +92,12 @@ In this lesson, we'll cover the basics of navigating the file system on your com
 
 #### Materials
 - [Slides](https://ga-students.github.io/js-dc-4/02-data-types)
-- [Assignment](02-data-types/assignment/decoder.js)
+- [Assignment](02-data-types/assignment/assignment.md)
 - [Lesson Notes](02-data-types/lesson_plan.md)
-
+- [Lesson](https://www.youtube.com/watch?v=_cZPOUf5Ddg)
 
 ### Class 03: Control Flow
+Programming is often described as following a recipe - in this lesson, we discuss why it's more nuanced than that by looking at control flow - ways we can control what code gets executed and the conditions under which it gets executed. 
 
 #### Learning Objectives
 - Fork a repository and make a pull request

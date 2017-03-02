@@ -135,6 +135,9 @@ console.log( Math.random() ) // => 0.229375290430
 ```
 
 *How might I get a random number between 0 and 10*
+```
+Math.floor( Math.random() * ( max - min + 1 ) + min );
+```
 
 ## Strings
 - What values constitute Strings?
@@ -166,6 +169,10 @@ console.log( Math.random() ) // => 0.229375290430
 'hello'.toUpperCase()
 'HeLLo'.toLowerCase()
 ```
+
+### Exercise
+1. `console.log( 'zachary ' + 'fleischmann' )`
+2. `console.log( 'zachary'.charAt(2) + 'zacary'.charAt(4) + 'zachary'.charAt(0) )`
 
 ## Booleans
 - What values constitute Booleans?

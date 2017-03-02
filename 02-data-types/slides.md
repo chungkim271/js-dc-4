@@ -10,28 +10,81 @@
 | ------ | ---------------------------------------- |
 | 5  min | Check In                                 |
 | 10 min | Review: Git & Terminal                   |
-| 30 min | Data Types                               |
-| 5  min | Break                                    |
-| 30 min | Data Types (cont'd)                      |
-| 15 min | Variables                                |
+| 40 min | Data Types                               |
+| 10 min | Break                                    |
+| 30 min | Data Types (cont'd) & Variables          |
 | 30 min | Intro Arrays                             |
-| 5  min | Break                                    |
-| 30 min | Our first Script!                        |
-| 10 min | Review Our first Script                  |
+| 10 min | Break                                    |
+| 40 min | Our first Script!                        |
 | 5  min | Check out                                |
 
 ---
 ## Review
 
+--
+### Review
+- Count off 1-4 and find a corner of the room
+- A question or command will come up on the board
+- Go around your group answering the question or explaining what the command does
+
+--
+### `pwd`
+
+--
+### How to I create a folder through the command line?
+
+--
+### What is Git and what is it used for?
+
+--
+### How do I start a Git project?
+
+--
+### `rm -rf test-directory`
+
+--
+### Describe `local`, `remote`, and `origin` in Git
+
+--
+### `mv test-directory/* dir02/`
+
+--
+### What is a relative path?
+
+--
+### How do we save our work in Git? (2 parts!)
+
+--
+### `touch test.js`
+
+--
+### What does `git add .` do?
+
+--
+### `cp test-directory/* dir02/`
+
+--
+### What is an absolute path?
+
+--
+### What is Forking on GitHub?
+
+--
+### What is a Pull Request on GitHub?
+
+--
+## Done!
+Great job!
+
 ---
 ## Looking Ahead
 
-| Lesson No. | Topic         |
-| ---------- | -------       |
-|     02     | Data Types    |
-|     03     | Control Flow  |
-|     04     | Functions     |
-|     05     | Objects       |
+| Lesson No. | Topic          |
+| ---------- | -------        |
+|   **02**   | **Data Types** |
+|     03     | Control Flow   |
+|     04     | Functions      |
+|     05     | Objects        |
 
 ---
 ## Introduction to Data Types
@@ -42,7 +95,7 @@
 --
 ### Values and Operators
 - What values constitute this data type?
-- What operations can I perform on this data type?
+- What operations can we perform on this data type?
 
 ---
 ## Numbers
@@ -87,7 +140,7 @@ Two Types of Numeric Operators:
 --
 ### String Values
 `"This is a string"` <br />
-`'This is another string'`
+`'This is another string'` <br />
 
 --
 ### Use Cases

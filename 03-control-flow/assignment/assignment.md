@@ -1,3 +1,7 @@
+# Assignment
+1. 99 Bottles of Beer
+2. Fizz Buzz
+
 **99 Bottles of Beer** (bottles.js)
 Write a script that logs to the console the lyrics to "99 Bottles of Beer on the Wall" in the terminal. If you're unfamiliar with the song, you can [find the lyrics here](http://www.99-bottles-of-beer.net/lyrics.html). Make sure your program can handle both singular and plural cases (i.e. both "100 bottles of beer" and "1 bottle of beer").
 
@@ -7,6 +11,7 @@ Fizz buzz is literally the most fun game you'll ever play in your entire life! T
 *Bonus:* replace any number that is a multiple of both 3 and 5 with `fizzbuzz`.
 
 * [Chapter 2: Program Structure, Eloquent JavaScript](http://eloquentjavascript.net/02_program_structure.html)
-* [Chapter 3: Functions, Eloquent JavaScript](http://eloquentjavascript.net/03_functions.html)
+*  [MDN - Making Decisions in your Code] (https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals)
+* [MDN - Looping Code ](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Looping_code)
 
 **Bonus Bonus:** Want some more? Check out [Project Euler](https://projecteuler.net/) (this first exercise will probably look a little familiar ...)
