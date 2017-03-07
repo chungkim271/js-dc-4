@@ -214,6 +214,76 @@ console.log( c )
 
 ```
 
+## Using Functions
+In javascript, functions are instances of the Functions object - a native javascript object to describe functions. That's right, functions are objects. If you run `typeof v` where v is a function, you'll get `function` back, which is helpful, but what it means for us is that functions are another datatype and can be used as one.
+
+That means we can store functions in a variable - or in an array, or in an object. Anywhere we can use a variable
+
+- Alias a function by creating a variable that points to it.
+- Put functions in an array (possibly mixed with other types of data).
+- Use functions as properties of an object (see Chapter 9).
+- Pass a function into a function.
+- Return a function from a function.
+- Return a function from a function that itself takes a function as an argument.
+
+
+## Functional Programming
+- now that we've covered declaring functions and how to use them, it's time to take a step back and think at a higher level
+-  here, we're going to think about functions as functions, in the mathematical sense
+- functional programming is a programming paradigm that is derived from mathematics
+- entire languages that are purely/solely functional, like haskell, and supersets of javascript that enforce functional programming, like elm.
+
+### Pure Functions
+Two criteria for pure functions:
+1. always return the same output for the same set of inputs
+2. don't have any side effects (invoking our function wont have any affect on the state of our program elsewhere)
+
+- this is a paradigm of programming that many people like to follow, one of it's biggest use cases is that it will often lead to fewer bugs in your programs
+
+### Making a function pure
+We have the following function for determining if it is currently a leap year:
+```
+function isCurrentYearLeapYear() {
+
+   const year = new Date().getFullYear()
+
+   if(year % 4 !== 0) {
+     return false
+   } else if(year % 100 != 0) {
+     return true
+   } else if(year % 400 != 0) {
+     return false
+   } else {
+     return true
+   }
+
+}
+```
+
+We can make this function pure, by not having it tied to the current year:
+
+```
+function isCurrentYearLeapYear( year ) {
+
+   if(year % 4 !== 0) {
+     return false
+   } else if(year % 100 != 0) {
+     return true
+   } else if(year % 400 != 0) {
+     return false
+   } else {
+     return true
+   }
+
+}
+```
+
+### Why use pure functions
+- makes programming more like math?
+- because pure functions make your code easier to test, easier to understand, and more portable.
+- functions that return different values under different circumstances or rely on outside data or create side effects are tied to their context
+- if I spend all this time writing a function that is tied to it's context and I want to use it for a very slightly different task - will it work?
+
 
 ## Exercise 4 Solution
 

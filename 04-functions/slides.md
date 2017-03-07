@@ -8,12 +8,9 @@
 | Timing | Topic                                    |
 | ------ | ---------------------------------------- |
 | 5  min | Check In                                 |
-| 40 min | Review                                   |
-| 5  min | Break                                    |
-| 45 min | Functions                                |
-| 5  min | Break                                    |
-| 45 min | Functions (cont'd)                       |
-| 5  min | Break                                    |
+| 20 min | Review                                   |
+| 90 min | Functions                                |
+| 25 min | Functional Programming                   |
 | 20 min | Exercise                                 |
 | 5  min | Exit                                     |
 
@@ -21,7 +18,6 @@
 ## Review
 - Each row will become a group of 3-4 students
 - Each group has a `warmup.js` file in the `exercises` directory
-- First group to finish their exercise wins
 - Once all groups finish, someone from each group will present their solution
 
 ---
@@ -31,7 +27,7 @@
 | ---------- | -------           |
 |     02     |   Data Types      |
 |     03     |   Control Flow    |
-|   **04**   | **Functions**     |
+|     **04**     |   **Functions**       |
 |     05     |   Objects         |
 
 ---
@@ -99,4 +95,4 @@ Scope determines where variables are considered defined
 ## Exercise
 
 ---
-## Thank you!
+:# Thank you!

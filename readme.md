@@ -111,6 +111,7 @@ Programming is often described as following a recipe - in this lesson, we discus
 
 
 ### Class 04: Functions
+Now that we know how to work with data and control when certain actions are performed by our program, we need a way to encapsulate code so we can reuse it. Functions let us write code that will perform an action whenever we ask it to do so.
 
 #### Learning Objectives
 - Understand what functions are and how, when and why to use them
