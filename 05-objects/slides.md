@@ -9,10 +9,9 @@
 | ------ | ---------------------------------------- |
 | 5  min | Check In                                 |
 | 30 min | Review                                   |
+| 30 min | Objects                                  |
 | 5  min | Break                                    |
-| 40 min | Objects                                  |
-| 5  min | Break                                    |
-| 40 min | Objects (cont'd)                         |
+| 50 min | Objects                                  |
 | 5  min | Break                                    |
 | 30 min | Exercise                                 |
 | 15 min | Closing Questions & Exit                 |
@@ -65,7 +64,16 @@
 - lightweight data format (like SQL, but nothing like SQL)
 
 ---
-## Bringing it all together
+## Object Oriented Programming
+
+--
+### Terminology
+|  Term       |  Definition         |
+| ------      | ------------------- |
+| class       | a generic thing     |
+| instance    | a specific thing    |
+| method      | class functionality |
+| prototype   | first instance      |
 
 ---
 ## Exercise

@@ -14,7 +14,6 @@
 
 ## Review: Functions
 
-
 ## Introduction to Objects
 *The goal of this section is to introduce students to the basics of JavaScript Objects: what they are and why and how we use them*
 
@@ -67,13 +66,6 @@ The Anatomy:
 - we close with what we call a method
 - as you can see from this object, we can put anything into an object: a string, an array, another object, a function  
 
-Modeling:
-- Doing two things here, the first is creating an object and the second is I'm modeling a real world thing, a person
-- I could have done this with a car or a house or an airplane
-- This is really why objects are powerful and useful for us and this is the basis of Object Oriented Programming
-  - on some level they give us a way to organize data and functions that are all related to each other, but we can do that in a way that models some real world thing that we're trying to emulate in our program
-  - What are some common things we may want to model in an application?
-    - a user, a class or lesson, etc
 
 ## Working with Objects
 *Now that students know how to create objects, this section should introduce them to the concepts of working with objects: getting/setting properties in an object and creating object methods*
@@ -99,6 +91,15 @@ We can use both to get and set properties and methods of our object
 
 ## Bringing it all together
 *Now, we want to bring it all together: returning objects from a function, using different datatypes within an object, working with multiple objects, creating multiple objects*
+
+Modeling:
+- Doing two things here, the first is creating an object and the second is I'm modeling a real world thing, a person
+- I could have done this with a car or a house or an airplane
+- This is really why objects are powerful and useful for us and this is the basis of Object Oriented Programming
+  - on some level they give us a way to organize data and functions that are all related to each other, but we can do that in a way that models some real world thing that we're trying to emulate in our program
+  - What are some common things we may want to model in an application?
+    - a user, a class or lesson, etc
+
 
 - lets create an object that models a car
 - we have all this to create a car, but what we don't have is a way - based on this - to take this one car and create multiple versions of this object to represent different types of cars

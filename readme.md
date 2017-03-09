@@ -97,7 +97,7 @@ Data types are the most atomic unit of any program. Javascript has many basic da
 - [Lesson](https://www.youtube.com/watch?v=_cZPOUf5Ddg)
 
 ### Class 03: Control Flow
-Programming is often described as following a recipe - in this lesson, we discuss why it's more nuanced than that by looking at control flow - ways we can control what code gets executed and the conditions under which it gets executed. 
+Programming is often described as following a recipe - in this lesson, we discuss why it's more nuanced than that by looking at control flow - ways we can control what code gets executed and the conditions under which it gets executed.
 
 #### Learning Objectives
 - Fork a repository and make a pull request
@@ -127,6 +127,7 @@ Now that we know how to work with data and control when certain actions are perf
 
 
 ### Class 05: Objects
+Our final class on Javascript as a language covers Objects. This lesson will also cover Object Oriented Programming, a paradigm often held in opposition to Functional Programming, which we talked about in the last class. 
 
 #### Learning Objectives
 - Create and modify JavaScript Objects
