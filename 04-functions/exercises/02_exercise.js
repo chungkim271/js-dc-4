@@ -10,3 +10,15 @@ Call both functions twice, passing in different numbers as arguments
 each time.
 
 */
+
+
+function addNumbers(x, y) {
+	console.log(x + y)
+}
+
+function subtractNumbers(x, y=2) {
+	console.log(x-y)
+}
+
+addNumbers(1,4)
+subtractNumbers(10)

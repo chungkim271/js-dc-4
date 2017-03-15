@@ -60,20 +60,26 @@ Don't worry about removing the card from deckOfCards.
 
 // declare our function getRandomCard
 function getRandomCard( deck ) {
-  // generate a random index between 0 and 52
+  // generate a random index between 0 and 51
   var randomIndex = Math.floor(Math.random() * deck.length)
 
   // return a random card from our deck, using the random
   // index we just created
+
   return deck[ randomIndex ]
+
+  // if you want to remove that card from the deck
+  deck.splice(randomIndex, 1)
 }
 
 // call our function and save the return value to a variable
 var randomCard = getRandomCard( deckOfCards )
 
-// Uncomment the following line to see it work:
-// console.log( randomCard )
 
+
+// Uncomment the following line to see it work:
+console.log( randomCard )
+console.log( deckOfCards )
 
 
 /*
@@ -97,6 +103,9 @@ function dealHand( handLength, deck ) {
   var hand
   handLength = handLength || 1
 
+  // note: don't pass default value in function parameter 
+  // because older browsers might not support it
+
   if ( handLength === 1 ) {
     // if handLength is one, then we just want to return a random card
     // as a string
@@ -119,19 +128,19 @@ function dealHand( handLength, deck ) {
   return hand
 }
 
-// Uncomment the following lines to see it work:
-// console.log( dealHand( null, deckOfCards ) )
-// console.log( dealHand( 7, deckOfCards ) )
+Uncomment the following lines to see it work:
+console.log( dealHand( null, deckOfCards ) )
+console.log( dealHand( 7, deckOfCards ) )
 
 
-/*
+
 
 Create two variables, playerOneCards and playerTwoCards, and
 initialize them as empty arrays.
 
 Deal both playerOneCards and playerTwoCards 7 cards each.
 
-*/
+
 
 var playerOneCards = dealHand( 7, deckOfCards )
 var playerTwoCards = dealHand( 7, deckOfCards )

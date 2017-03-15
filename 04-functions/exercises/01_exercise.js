@@ -6,9 +6,11 @@ Write a function that `console.log`s 'Hello World' and call it.
 
 */
 
+function helloWorld() {
+	console.log("hello world")
+}
 
-
-
+helloWorld()
 
 /*
 
@@ -22,3 +24,12 @@ Use both of your functions a few times. If there's time, write
 functions that add or subtract more than 1 from myNumber.
 
 */
+ myNumber = 5
+
+ function addOne(num) {
+ 	num + 1
+ }
+
+ function subtractOne(num) {
+ 	num - 1 
+ }

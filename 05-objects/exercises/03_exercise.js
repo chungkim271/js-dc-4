@@ -20,3 +20,18 @@ Apple, Red, 0.78
 Nuts, Brown, 2.23
 
 */
+
+var data = require('./data.json')
+console.log(data)
+
+
+messageArray = []
+
+messageArray[0] = data['Store Name'] + '\'s Current Stock'
+messageArray[1] = Object.keys(data.Foods[1]).join(', ')
+for (i=0; i < data.Foods.length; i++) {
+	tempObj = data.Foods[i]
+	messageArray[i+2] = Object.keys(tempObj).map(function(key) {return tempObj[key]}).join(', ')
+} 
+
+console.log(messageArray.join('\n '))
