@@ -1,13 +1,12 @@
 # Exercise 01
 - initialize a project with npm
-- install `game-prompt` using npm
+- install `swap-case` using npm ( https://www.npmjs.com/package/swap-case )
 - where does NPM install this library?
-- uninstall `game-prompt`
+- uninstall `swap-case`
 
 # Exercise 02 A
 - in `one.js`, write a function called `one` that `console.log`s the number `1` whenever it is called
 - in `index.js`, import `one.js` using `require`, just like we did with `data.json` last time. What happens?
-
 
 # Exercise 02 B
 Try these out:

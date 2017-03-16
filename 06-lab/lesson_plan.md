@@ -42,9 +42,9 @@ Npm records the results of all of these actions in a file called `package.json`.
 
 ## Exercise 1
 - initialize a project with npm
-- install `game-prompt` using npm
+- install `prompt` using npm
 - where does NPM install this library?
-- uninstall `game-prompt`
+- uninstall `prompt`
 
 ## Architecting a program
 *The goal of this mini-lesson is to introduce students to the idea of breaking their program out into multiple files and how to do so*

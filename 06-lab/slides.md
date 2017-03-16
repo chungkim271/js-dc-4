@@ -8,10 +8,9 @@
 | Timing  | Topic                                    |
 | ------  | ---------------------------------------- |
 | 5   min | Check In                                 |
-| 30  min | NPM and using Third Party Libraries      |
-| 30  min | Organizing our codebase                  |
-| 5   min | Break                                    |
-| 100 min | Lab!                                     |
+| 15  min | NPM and using Third Party Libraries      |
+| 15  min | Organizing our codebase                  |
+| 140 min | Lab!                                     |
 | 5   min | Exit                                     |
 
 ---
@@ -25,6 +24,9 @@ Package manager for managing project dependencies
 ### NPM
 A dependency is any third party code that our application depends on
 
+--
+### NPM
+Lets see it in action!
 
 ---
 ## Building a Program

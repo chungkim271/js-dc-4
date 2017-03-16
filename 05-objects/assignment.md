@@ -1,3 +1,6 @@
+# Homework
+Since we didn't get to [exercise 04](https://github.com/ga-students/js-dc-4/blob/master/05-objects/exercises/04_exercise.js) it is now assigned as homework, due before the start of next class!
+
 # Review
 The following is suggested reading for you, if you'd like to review any of the material we've covered in the first part of the course.
 
