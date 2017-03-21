@@ -13,8 +13,8 @@ Getting stuff from the DOM
 
 
 // Get #title
-var title = document.getElementById('title')
-// or docuent.querySelector('title')
+// var title = document.getElementById('title')
+// or document.querySelector('title')
 
 
 // Get the text of #title
@@ -48,12 +48,12 @@ Creating DOM elements
 
 */
 
-var link = document.createElement('a') // creates a new element (in memory)
-link.href = "/" // sets the href property of the <a> element
-link.id = 'myLink' // sets the ID property
-link.textContent = "This is a link I made"
-
-console.log( link ) // <a href="/" id="myLink">This is a link I made</a>
+// var link = document.createElement('a') // creates a new element (in memory)
+// link.href = "/" // sets the href property of the <a> element
+// link.id = 'myLink' // sets the ID property
+// link.textContent = "This is a link I made"
+//
+// console.log( link ) // <a href="/" id="myLink">This is a link I made</a>
 
 /*
 
@@ -63,7 +63,7 @@ via append, remove
 */
 
 // Appending
-document.getElementById('first-paragraph').appendChild( link )
+// document.getElementById('first-paragraph').appendChild( link )
 // link will be appended (added to the end) as a child (so within the p element)
 
 

@@ -38,17 +38,19 @@
 - we'll continue to use everything we learned in part 1 on a regular basis
 - focus will be on using the language and becoming JavaScript developers
 
-
 ### Intro to JavaScript: Part II
 - building applications in JavaScript
-- start at what's called the front end and move our way to the back end
-- we're going to:
-  - get, set and manipulate elements in the browser
-  - respond to events in the browser (like when someone clicks on something)
-  - use JavaScript to encapsulate parts of a webpage into templates and bring those templates in and out of the page using JavaScript
-  - set up our first server using JavaScript
-    - server is going to respond to network requests like any web application
-  - we're going learn how to work with and build out own basic APIs (and what an API is)
+- start on what we call the front end or the client side of an applications
+  - what the user sees and interacts with
+  - start with the dom - how does the browser build and render HTML web pages and how can we use javascript to interact and manipulate an html web page once it's been rendered
+  - templating: building an html page on the client using javascript, rendering new parts of the page with new data
+  - we'll also talk about build tools which are ways for us to use javascript to automate mundane work that comes with building websites or web applications
+  - take a jump to the back end and build our first server. using a framework called Express, we'll build servers that can respond to http requests
+  - once we know how to build servers, we'll need to know how to work with databases so we can save data somewhere safe. At this point we'll be able to build feature rich applications
+  - then we're going to talk about APIs - at this point we'll have everything we need to build our own APIs and to work with APIs others have built. An API is often shrowded in mystery but it's really just a pattern for organizing a server that manages data in a database - we'll know how to build servers, we'll know how to work with databases, so we'll know how to build APIs
+  - We'll close this section off by talking about application architecture - this lesson will focus on how we break up our application into different parts, what functionality do we put where and why
+- our lab for this class will be a clone of the popular Hacker News site
+- one we know how to build applications probably around lesson 11 or 12 we're going to start thinking about the final project - we'll do some early ideation to figure out what you want to build and get started at a very high level
 
 
 

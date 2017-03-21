@@ -8,10 +8,9 @@
 | Timing | Topic                                    |
 | ------ | ---------------------------------------- |
 | 5  min | Check In                                 |
-| 50 min | Review the Lab                           |
-| 10 min | Looking ahead                            |
+| 30 min | Review the Lab                           |
 | 5  min | Break                                    |
-| 15 min | JS In the Browser                        |
+| 25 min | JS In the Browser                        |
 | 45 min | Intro to the DOM & Working with the DOM  |
 | 5  min | Break                                    |
 | 50 min | Working with the DOM cont'd              |
@@ -27,15 +26,16 @@ How did it go?
 --
 ## Looking Ahead
 
-| Lesson No. |        Topic         |
-| ---------- | -------------------  |
-|   **07**   | **Intro to the DOM** |
-|     08     | Events & Templating  |
-|     09     | MVC Architecture     |
-|     10     | Express              |
-|     11     | APIs                 |
-|     12     | Authentication       |
-|     13     | Lab #2               |
+| Lesson No. |        Topic             |
+| ---------- | ------------------------ |
+|   **07**   | **Intro to the DOM**     |
+|     08     | Events                   |
+|     09     | Templating & Build Tools |
+|     10     | Express                  |
+|     11     | Databases & CRUD         |
+|     12     | APIs                     |
+|     13     | Application Architecture |
+|     14     | Lab #2                   |
 
 ---
 ## JS In the Browser

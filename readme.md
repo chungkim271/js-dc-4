@@ -150,7 +150,8 @@ Today's lesson is short and sweet! We'll go over npm and breaking our program ou
 - [Slides](https://ga-students.github.io/js-dc-4/06-lab)
 - [Assignment](06-lab/assignment.md)
 - [Lesson Notes](06-lab/lesson_plan.md)
-
+- [Mini-lessons](https://www.youtube.com/watch?v=zAUKqWrwV3A)
+- [Lab walk through](https://www.youtube.com/watch?v=QXXGT0-Mz-M&feature=youtu.be)
 
 ### Class 07: Intro to the DOM
 

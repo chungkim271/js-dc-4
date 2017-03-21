@@ -18,6 +18,20 @@
 | 30 min | Final Exercise                           |
 
 
+---
+## Looking Ahead
+
+| Lesson No. |        Topic             |
+| ---------- | ------------------------ |
+|     07     |   Intro to the DOM       |
+|     08     | Events                   |
+|     09     | Templating & Build Tools |
+|     10     | Express                  |
+|     11     | Databases & CRUD       |
+|   **11**   | **APIs**                   |
+|     12     | Application Architecture |
+|     13     | Lab #2                   |
+
 --
 ### HTTP recap
 - Client and Server relationship
