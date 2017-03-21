@@ -128,18 +128,18 @@ function dealHand( handLength, deck ) {
   return hand
 }
 
-Uncomment the following lines to see it work:
-console.log( dealHand( null, deckOfCards ) )
-console.log( dealHand( 7, deckOfCards ) )
+// Uncomment the following lines to see it work:
+// console.log( dealHand( null, deckOfCards ) )
+// console.log( dealHand( 7, deckOfCards ) )
 
 
 
-
+/*
 Create two variables, playerOneCards and playerTwoCards, and
 initialize them as empty arrays.
 
 Deal both playerOneCards and playerTwoCards 7 cards each.
-
+*/
 
 
 var playerOneCards = dealHand( 7, deckOfCards )
@@ -177,10 +177,10 @@ compare their score with each other!
 */
 
 // decalare our function
-function getPumped() {
-  // take it up to 11
-  console.log( 'WHOOOOOOOOO' )
-}
+// function getPumped() {
+//   // take it up to 11
+//   console.log( 'WHOOOOOOOOO' )
+// }
 
 // Uncomment the following line to see it work:
 // getPumped()

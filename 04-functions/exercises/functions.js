@@ -69,32 +69,32 @@ myFirstFunction()
 
 */
 
-// function addOne( numOne, numTwo ) {
-//   return numOne + numTwo
-// }
-//
-// var myNum = addOne( 5, 10 )
-// console.log( myNum )
+function addOne( numOne, numTwo ) {
+  return numOne + numTwo
+}
+
+var myNum = addOne( 5, 10 )
+console.log( myNum )
 
 
 
-// // Side effect
-// var number = 0
-//
-// function addNumber( adder ) {
-//   number += adder
-// }
-//
-// addNumber( 5 )
-// // => number = 5
-//
-// // Output
-// function addNumbers( num1, num2 ) {
-//   return num1 + num2
-// }
-//
-// var number = addNumbers( 5, 10 )
-// console.log( number ) // => 15
+// Side effect
+var number = 0
+
+function addNumber( adder ) {
+  number += adder
+}
+
+addNumber( 5 )
+// => number = 5
+
+// Output
+function addNumbers( num1, num2 ) {
+  return num1 + num2
+}
+
+var number = addNumbers( 5, 10 )
+console.log( number ) // => 15
 
 
 
