@@ -18,8 +18,6 @@ Using JavaScript, get the 'js-gallery' list and save it to a variable. Then pull
 Hint: think about DOM methods that we can call on DOM elements we've already pulled from the page
 
 */
-var myGallery = document.querySelector('.js-gallery')
-var galleryItems = myGallery.querySelectorAll('.js-gallery-item')
 
 
 
@@ -34,8 +32,7 @@ To start, create a variable called slideCount that is equal to the number of sli
 To get the width, try getBoundingClientRect() or offsetWidth.
 
 */
-var slideCount = galleryItems.length
-var slideWidth = galleryItems[0].getBoundingClientRect().width
+
 
 
 /*
@@ -53,11 +50,6 @@ Create a function called transitionSlide that, for now, just `console.log`'s 'Ca
 
 */
 
-var myTimer = setInterval( transitionSlide, 5000 )
-
-// function transitionSlide() {
-//   console.log( 'this works!' )
-// }
 
 
 /*
@@ -76,24 +68,6 @@ Inside transitionSlide() we need to do two things:
     - set the transform style property so that translateX() is 0
     - set currentSlide back to 1
 
-
 Hint: delta should always be a negative number
+
 */
-
-var currentSlide = 1
-function transitionSlide() {
-
-  if ( currentSlide < slideCount ) {
-
-    myGallery.style.transform = "translateX(-" + slideWidth * currentSlide  + "px)"
-
-    currentSlide++
-
-  } else {
-
-    myGallery.style.transform = "translateX(0px)"
-    currentSlide = 1
-
-  }
-
-}

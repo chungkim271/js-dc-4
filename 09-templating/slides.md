@@ -54,36 +54,6 @@
 Refactor slideshow to respond to events
 
 ---
-## MVC
-Model - View - Controller
-
---
-### Model
-- the data of our application
-- application's resources
-- each "thing" gets a model
-
---
-### View
-- what the user sees
-- the user interface for our application
-
---
-### Controller
-- where we knit our models and views together
-- our business logic
-
---
-## MVC in Sum
-
-|             |                  |
-| ----------  | ---------------- |
-| Model:      | Application Data |
-| View:       | User Interface   |
-| Controller: | Business Logic   |
-|             |                  |
-
----
 ## Views (and Templating)
 A brief sidestep to talk about templating
 
@@ -133,9 +103,6 @@ h2 By #{author}
 --
 ### Up and Running with Handlebars
 http://tryhandlebarsjs.com/
-
---
-### Turning Handlebars into Views
 
 --
 ### Adding a model

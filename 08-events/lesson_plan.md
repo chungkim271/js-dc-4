@@ -27,12 +27,12 @@ Goals:
 
 ### Event Driven Development
 - paradigm - way of approaching the construction of software
-- in this case, event driven development means that the flow of the program is determined by events
+- in this case, event driven development means that user events determine the flow of the program
 - events are typically user actions, but can also be sensor readings and output or messages from other programs
 - event driven development is a dominant paradigm in JS application development
   - most often concerned with building out an application that is going to respond to user input
   - your War lab is a great example of event driven development, sort of
-  - caveat is that we didn't really need user input at each step in the loop
+  - caveat is that we didn't need user input at each step in the loop
   - that is a refactor we could do that would make them even more event driven
 
 

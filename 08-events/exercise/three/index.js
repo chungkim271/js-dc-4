@@ -5,9 +5,7 @@ The event object
 
 */
 
-var counterIndex = 0
-var myCounter = document.querySelector('h1')
-myCounter.textContent += " " + counterIndex
+
 
 /*
 

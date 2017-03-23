@@ -1,21 +1,19 @@
 
 
 <img src="https://ga-core.s3.amazonaws.com/production/uploads/program/default_image/5225/JS-logo-official.png" style="max-width: 100px; border: none; box-shadow: none" />
-## Class 08: Events and Templating
+## Class 08: Events
 
 ---
 ### Agenda
 | Timing | Topic                                    |
 | ------ | ---------------------------------------- |
 | 5  min | Check In                                 |
-| 25 min | Warm Up Exercise                         |
-| 30 min | Events and event handlers                |
+| 45 min | Warm Up Exercise                         |
 | 5  min | Break                                    |
-| 25 min | Events and event handlers cont'd         |
+| 45 min | Events and event handlers                |
+| 5  min | Break                                    |
+| 30 min | Events and event handlers cont'd         |
 | 30 min | Events mini lab                          |
-| 5  min | Break                                    |
-| 30 min | Templating                               |
-| 25 min | Final Activity                           |
 | 5  min | Closing Questions & Exit                 |
 
 ---
@@ -131,58 +129,3 @@ myButton.addEventListener("click", function( event ) {
   console.log( "clicked on " + event )
 })
 ```
-
----
-## Templating
-
---
-### Templating: A Brief Introduction
-- Break up an `html` page into components or partials
-- Dynamically build out entire `html` pages
-- Bring functionality to our markup
-
---
-### Types of Templating Languages/Engines
-3 Flavors of templating:
-- Jade / Pug
-- Nunjucks / Swig ( EJS, sort of )
-- Handlebars / Mustache
-
---
-### Jade / Pug
-```
-h1 This is a Pug template
-h2 By #{author}
-```
-
---
-### Nunjucks / Swig
-
-```
-<h1> Hello \{\% name \%\} </h1>
-```
-
---
-### EJS
-```
-<h1> Hello <% name %>  </h1>
-```
-
---
-### Handlebars / Mustache
-```
-<div class="entry">
-  <h1>{{ title }}</h1>
-  <div class="body">
-    {{ body }}
-  </div>
-</div>
-```
-
---
-### Up and Running with Handlebars
-http://tryhandlebarsjs.com/
-
---
-### Using Handlebars in a webpage
-`<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>`
