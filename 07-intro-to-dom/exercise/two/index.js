@@ -15,13 +15,22 @@ Get the DOM nodes for the table of contents and the article body and save them b
 
 */
 
+var tableOfContents = document.getElementById('table-of-contents')
+var articleBody = document.querySelector('#article-body')
 
+console.log(tableOfContents)
+console.log(articleBody)
 
 /*
 
-get an array of every heading in the document and store them in a variable called documentHeadings
+get an array of every heading in the document and store them 
+in a variable called documentHeadings
 
 */
+
+documentHeadings = document.querySelectorAll('.heading')
+console.log(typeof documentHeadings)
+
 
 
 
@@ -30,10 +39,17 @@ get an array of every heading in the document and store them in a variable calle
 To generate our table of contents we need to do a couple of things:
 
 1. We need to loop through our documentHeadings array
-2. Inside our loop, we need to clone the curent element from the documentHeadings array and append it to the table of contents element
+2. Inside our loop, we need to clone the curent element from 
+the documentHeadings array and append it to the table of contents element
 
 */
 
+justHeadings = []
+
+for (i=0; i < documentHeadings.length; i++) {
+	justHeadings.push(documentHeadings[i].textContent) 
+}
+console.log(justHeadings)
 
 
 /*
