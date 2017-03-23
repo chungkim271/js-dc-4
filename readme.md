@@ -168,6 +168,7 @@ Today's lesson is short and sweet! We'll go over npm and breaking our program ou
 
 
 ### Class 08: Events
+Today's class goes in depth on event driven development, responding to browser/user events with Javascript  and writing event handlers.
 
 #### Learning Objectives
 - Implement events using JavaScript
