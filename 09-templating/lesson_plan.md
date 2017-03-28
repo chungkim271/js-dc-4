@@ -1,4 +1,4 @@
-# MVC Architecture
+# Templating & Build Tools
 
 
 ## Class Structure
@@ -27,53 +27,43 @@ Pros:
 - truly incredible cross browser support
 
 Cons:
-- it's huge and slow
-- makes it really difficult to actually learn JavaScript
+- it's big and slow
+- makes it difficult to actually learn JavaScript
 - promotes a not great way of thinking about the DOM and building web applications
 
 Why don't we spend class time on learning it?
-- I'm super conflicted about whether or not to teach it.
-- This is a course on JavaScript and it would be a bit of a cop out to just teach jQuery
+- I'm conflicted about whether to teach it.
+- This is a course on JavaScript and it would be a bit of a cop out to teach jQuery
 - My fear is students wouldn't learn to understand the most important aspect of JavaScript, build dynamic web applications
 - If you know it or you want to learn, go for it and feel free to use it in your homework assignments
 
-## MVC
-
-MVC stands for __Model - View - Controller__ and is a common way of organizing front end applications so that they're easy to build and maintain. We call this an architecture or pattern, because it's a common way of organizing code to solve similar problems, namely around organizing and choreographing the various parts of our applications.
-
-The MVC pattern divides each resource of our application in to of three parts:
-
-__The Model:__
-The model is where we define the data or our application. The technical term is "things" and each "thing" within our application will have a model.
-
-So if we're building an admissions application for a school, we'd have a model for student, advisor, individual applications, etc.
-
-Each "thing" within our application gets a model
-
-__The View:__
-The view is what the user sees. In our case, this is the html and css that get's rendered to the screen. Each Model can have a couple of different views - maybe a list view where we see every instance of that model, an index view where we see a single instance in more detail. Overall, our views will comprise the user interface of our application.
-
-__The Controller:__
-The controller is where we knit our models and views together. This is where our business logic will live and where we'll choreograph our different views together.
-
-__In Sum__, We've sort of talked about this stuff - just not necessarily in this way. Did we build models for things (like cards and decks)? Did we write code that organized and made those models work together (like in a game)? Did we build out a user interface for people to see what was happening in our application and interact with it? Those are models, views and controllers!
-
-Similarly, I think we'll be able to pretty immediately see the benefit of having a strict structure on where we put stuff. When people were doing the lab, were they often wondering where to put something, where to write some logic? MVC solves that to a large degree.
-
-## Views: In Depth
-
-### Templating
-- way for us to be modular and reactive in how we construct an HTML page
-- rather than having entire html pages all built out that we navigate between, we can have multiple bits and pieces to our page that we use to construct full pages in response to events and other triggers
-
+## Templating
+- templating is an important tool/method for us for a few reasons:
+  1. gives us a way to be modular about how we construct a page for a user
+  2. lets us react to user input and change parts or all of a page
+  3. lets us get data into the page and respond when that data changes by updating the page
 
 ### Types of Templating Engines / Languages
+- 3 classifications of templating Languages
+  - recognize them by (1) their syntax and (2) their feature set
 - Jade / Pug:
-  - html processing component gives us everything a templating engine does but includes a cleaner way to write html
-- Nunjucks / Swig: logic-full templating, typically with
-- EJS - embeded JavaScript (port of ERB: Embeded Ruby)
-- Handlebars / Mustache - logic-less (typically), typically recognized with `{{}}`
+  - html processing component gives us everything a templating engine does but includes a cleaner, more terse way to write html
+- Nunjucks / Swig:
+  - logic-full templating (can process/manupulate data)
+  - EJS - embeded JavaScript (port of ERB: Embeded Ruby)
+- Handlebars / Mustache
+  - logic-less (typically), typically recognized with `{{}}`
 
+### Relation to web components
+- if you've ever looked at react, you may have seen something like this (ref to component in slide)
+- this is the opposite approach to templating
+- in templating, the templates are solely for displaying data
+  - especially true with handlebars (which is mostly logic-less)
+- we often need some way of efficiently render variations of the same template depending on the data
+  - this problem is what gave rise to logic-full templating
+  - logic-full templating tries to - as the name suggests - provide logic in our templates (i.e. in html)
+  - requires a lot of additional effort
+  - components/react solution is to do the opposite, bring html into our JS, so we can use JS to build out our markup
 
 ### Handlebars
 - we're going to be using handlebars
@@ -85,6 +75,9 @@ http://tryhandlebarsjs.com/
 
 #### Activity 1
 Basic syntax of handlebars
+  - open up tryhandlebarsjs and cover the template, data and output
+  - the template is where we'll write out what our final html will look like
+  - the data is what we're going to give our template to render
 
 Handlebars:
 ```
@@ -184,7 +177,7 @@ JSON:
 Now we know how to use handlebars, lets use it to build out views for our application.
 
 Step 1:
-First we need to get handlebars locally. We can use `npm` but for this were just going to link to the library directly:
+First we need to get handlebars locally. We can use `npm` but for this were going to link to the library directly:
 
 `<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>`
 
@@ -246,7 +239,3 @@ var data = {
 Step 8:
 - all we need to change is we need to pass this data to our function that renders the template:
 `var renderedTemplate = template( data )`
-
-__Give students a minute to let everything we did sink in__
-
-Build out the rest of the MVC application

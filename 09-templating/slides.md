@@ -1,21 +1,19 @@
 
 
 <img src="https://ga-core.s3.amazonaws.com/production/uploads/program/default_image/5225/JS-logo-official.png" style="max-width: 100px; border: none; box-shadow: none" />
-## Class 08: MVC
+## Class 09: Templating
 
 ---
 ### Agenda
 | Timing | Topic                                    |
 | ------ | ---------------------------------------- |
 | 5  min | Check In                                 |
-| 45 min | Warmup / Review  (quick: WTF is jQuery)  |
-| 10 min | Intro to MVC                             |
-| 5  min | Break                                    |
-| 50 min | MVC cont'd                               |
-| 5  min | Break                                    |
-| 20 min | MVC cont'd                               |
-| 30 min | Exercise                                 |
-| 5  min | Closing Questions & Exit                 |
+| 30 min | Warmup / Review                          |
+| 10 min | WTF is jQuery                            |
+| 80 min | Intro to Templating                      |
+| 30 min | Closing Exercise                         |
+| 15 min | Final Project                            |
+| 5  min | Closing Questions & Exit Ticket          |
 
 ---
 ## Looking Ahead
@@ -45,8 +43,8 @@
 
 --
 ### jQuery: Cons
-- it's huge and slow
-- makes it really difficult to actually learn JavaScript
+- it's big and slow
+- makes it difficult to actually learn JavaScript
 - promotes a not great way of thinking about the DOM and building web applications
 
 ---
@@ -54,8 +52,7 @@
 Refactor slideshow to respond to events
 
 ---
-## Views (and Templating)
-A brief sidestep to talk about templating
+## Templating
 
 --
 ### Templating: A Brief Introduction
@@ -80,7 +77,7 @@ h2 By #{author}
 --
 ### Nunjucks / Swig
 ```
-<h1> Hello \{\% name \%\} </h1>
+<h1> Hello {% name %} </h1>
 ```
 
 --
@@ -101,14 +98,21 @@ h2 By #{author}
 ```
 
 --
+### Relation to Web Components
+```
+class App extends Component (
+  render () {
+    return <h1>Hello world</h1>
+  }
+)
+```
+
+--
 ### Up and Running with Handlebars
 http://tryhandlebarsjs.com/
 
 --
-### Adding a model
-
---
-### Wrapping it all together with a controller
+### Handlebars To Do exercise
 
 ---
 ## Final Projects
