@@ -4,6 +4,7 @@ In-class Exercise 1
 
 */
 
+console.log("hi!! hi!!")
 
 /*
 
@@ -14,8 +15,12 @@ Getting stuff from the DOM
 
 // Get #title
 // var title = document.getElementById('title')
-// or document.querySelector('title')
 
+//var title = document.querySelector('title')
+// var title = document.getElementsByTagName('h1')
+
+// console.log(title)
+// console.log(typeof title)
 
 // Get the text of #title
 // console.log( title ) // will print the html element

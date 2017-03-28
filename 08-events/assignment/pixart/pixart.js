@@ -3,7 +3,10 @@
 PIXART
 A JS Painting Website
 
-In this exercise, students will build out a simple paint application. This application will have a form where users can set a color that they would like to paint with. The user can then mouse over cells that they would like to paint with that color.
+In this exercise, students will build out a simple paint application. 
+This application will have a form where users can set a color that 
+they would like to paint with. The user can then mouse over cells 
+that they would like to paint with that color.
 
 */
 
@@ -12,9 +15,11 @@ In this exercise, students will build out a simple paint application. This appli
 /*
 
 Step 1: Building the canvas
-Our canvas is 500px by 500px and we need to fill it with cells (wich a class of .square) that are 10px by 10px.
+Our canvas is 500px by 500px and we need to fill it with cells (wich a class of .square) 
+that are 10px by 10px.
 
-First, add however many divs with a class of "square" as you need to to fill our the #canvas element.
+First, add however many divs with a class of "square" 
+as you need to to fill our the #canvas element.
 
 If #canvas is 500 x 500, how many 10 x 10 squares can we fit in to it?
 
@@ -22,12 +27,26 @@ How we we create elements in JavaScript and add them to the page?
 
 */
 
+createSquareElement = function() {
+	newSquare = document.createElement("DIV")
+	newSquare.className = "square"
+	return newSquare
+}
+
+canvas = document.querySelector("#canvas")
+for (i=0; i < 2500; i++) {
+	canvas.appendChild(createSquareElement())
+}
+
 
 
 /*
 
 Step 2: Form Event
-When the user submits the form, either by hitting enter in the text input field or by clicking on the submit button, we should then get the color value that they entered and save it to a variable called currentColor.
+When the user submits the form, either by hitting enter in the text input field 
+or by clicking on the submit button, 
+we should then get the color value that they entered and save it to 
+a variable called currentColor.
 
 Once we have the color, we should update our .brush element, so that the user can see what color they're painting with at any given time.
 
@@ -39,15 +58,46 @@ hints:
 
 */
 
+currentColor = 'green'
+
+button = document.getElementById('set-color')
+inputBox = document.getElementById('color-field')
+brush = document.querySelector('.brush')
+
+// console.dir(button)
+// console.dir(inputBox)
+// console.dir(brush)
+
+button.addEventListener('click' || 'keypress', function(e) {
+	// prevent browser's default behavior 
+	e.preventDefault()
+
+	brush.style.backgroundColor = inputBox.value
+	currentColor = inputBox.value
+})
+
+// question: how does currentColor keep changing? we are not returning
+// currentColor to outside the function. when addEventListner is done
+// being called, doesn't all variables inside the function disappear?
 
 
 /*
 
 Step 3: Readying our Canvas
-Now that we can get the color the user wants to paint with from our form, we need to make it so they can actually paint with that color. Create an event handler that will change the background color of the event target to the current color and attach it to every div.square that you created made above.
+Now that we can get the color the user wants to paint with from our form, 
+we need to make it so they can actually paint with that color. 
+Create an event handler that will change the background color of the event target 
+to the current color and attach it to every div.square that you created made above.
 
 Hints:
-(1) you probably want to write your function here and then attach the event in your loop up in Step 1
-(2) think about what event we might want to attach our event handler too; what mouse events are there that might make sense?
+(1) you probably want to write your function here and then attach 
+the event in your loop up in Step 1
+(2) think about what event we might want to attach our event handler too; 
+what mouse events are there that might make sense?
 
 */
+
+canvas.addEventListener('mouseover', function(e) {
+	// this will propagate to children of canvas. 
+	e.target.style.backgroundColor = currentColor
+})
