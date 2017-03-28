@@ -8,7 +8,8 @@
 | Timing | Topic                                    |
 | ------ | ---------------------------------------- |
 | 5  min | Check In                                 |
-| 30 min | Warmup / Review                          |
+| 20 min | Review                                   |
+| 30 min | Warmup                                   |
 | 10 min | WTF is jQuery                            |
 | 80 min | Intro to Templating                      |
 | 30 min | Closing Exercise                         |
@@ -22,7 +23,7 @@
 | ---------- | ------------------------ |
 |     07     | Intro to the DOM         |
 |     08     | Events                   |
-|   **09**   | **Templating & Build Tools** |
+|   **09**   | **Templating**           |
 |     10     | Express                  |
 |     11     | Databases & CRUD         |
 |     11     | APIs                     |
@@ -69,43 +70,35 @@ Refactor slideshow to respond to events
 
 --
 ### Jade / Pug
-```
-h1 This is a Pug template
-h2 By #{author}
-```
+
+<img src="../assets/09-templating-jade.png" style="max-width: 600px; border: none;box-shadow: 0px 18px 20px 6px rgba(0,0,0,0.2);" />
+
 
 --
 ### Nunjucks / Swig
-```
-<h1> Hello {% name %} </h1>
-```
+
+<img src="../assets/09-templating-nunjucks.png" style="max-width: 600px; border: none;box-shadow: 0px 18px 20px 6px rgba(0,0,0,0.2);" />
+
 
 --
 ### EJS
-```
-<h1> Hello <% name %>  </h1>
-```
+
+<img src="../assets/09-templating-ejs.png" style="max-width: 600px; border: none;box-shadow: 0px 18px 20px 6px rgba(0,0,0,0.2);" />
+
 
 --
 ### Handlebars / Mustache
-```
-<div class="entry">
-  <h1>{{ title }}</h1>
-  <div class="body">
-    {{ body }}
-  </div>
-</div>
-```
+
+<img src="../assets/09-templating-handlebars.png" style="max-width: 600px; border: none;box-shadow: 0px 18px 20px 6px rgba(0,0,0,0.2);" />
+
+
 
 --
 ### Relation to Web Components
-```
-class App extends Component (
-  render () {
-    return <h1>Hello world</h1>
-  }
-)
-```
+
+<img src="../assets/09-templating-react.png" style="max-width: 600px; border: none;box-shadow: 0px 18px 20px 6px rgba(0,0,0,0.2);" />
+
+
 
 --
 ### Up and Running with Handlebars
@@ -117,14 +110,14 @@ http://tryhandlebarsjs.com/
 ---
 ## Final Projects
 
-- [Assignment](https://github.com/ga-students/JS-DC-3/final-project)
+- [Assignment](https://github.com/ga-students/js-dc-4/tree/master/final-project)
 - [Ideas](https://gallery.generalassemb.ly/WDI)
 
 --
 
 ### Final Project Schedule
 
-- Idea Submission: July 18
-- UI Draft: August 2
-- In Class Lab Time: August 16
-- Presentations/Due: August 18
+- Idea Submission: April 4
+- UI Draft: April 18
+- In Class Lab Time: April 27
+- Presentations/Due: May 2

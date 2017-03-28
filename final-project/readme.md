@@ -80,9 +80,9 @@ Friend locator site that allows users to see how far away they are from their fr
 
 ---
 
-### Schedule
+### Final Project Schedule
 
-- Idea Submission: October 26th
-- UI Draft: October 31st
-- In Class Lab Time: November 2nd
-- Presentations/Due: November 7th
+- Idea Submission: April 4
+- UI Draft: April 18
+- In Class Lab Time: April 27
+- Presentations/Due: May 2

@@ -16,5 +16,9 @@ You'll need to create a new template for a Current Todo and give each todo a way
 
 If you can think of other features to add, go for it!
 
+# Final Project
+Submit 3 ideas for your final project as a pull request to [this](https://github.com/ga-students/JS-DC-4-FinalProject) repository by April 4th! Put your project ideas in a `readme.md` file with bullet points explaining each idea.
+
+# Extra Reading
 For your skimming (or skipping) pleasure:
 - [You Might Not Need jQuery](http://youmightnotneedjquery.com/)

@@ -19,8 +19,6 @@ Hint: think about DOM methods that we can call on DOM elements we've already pul
 
 */
 
-var gallery = document.querySelector('.js-gallery')
-var galleryItems = gallery.querySelectorAll('.js-gallery-item')
 
 
 
@@ -35,9 +33,6 @@ To start, create a variable called slideCount that is equal to the number of sli
 To get the width, try getBoundingClientRect() or offsetWidth.
 
 */
-
-var slideCount = galleryItems.length
-var slideWidth = galleryItems[0].getBoundingClientRect().width
 
 
 
@@ -55,12 +50,6 @@ Also, it may seem counterintuitive but we want to save the result of calling set
 Create a function called transitionSlide that, for now, just `console.log`'s 'Called!' ever 5000 miliseconds
 
 */
-
-// var slideInterval = setInterval(transitionSlide, 5000)
-
-// function transitionSlide() {
-//   console.log( 'Called!' )
-// }
 
 
 
@@ -84,23 +73,6 @@ Inside transitionSlide() we need to do two things:
 Hint: delta should always be a negative number
 */
 
-// var currentSlide = 1;
-//
-// function transitionSlide() {
-//
-//   if ( currentSlide < slideCount ) {
-//
-//     gallery.style.transform = "translateX(-" + slideWidth * currentSlide + "px)"
-//     currentSlide++
-//
-//   } else {
-//
-//     gallery.style.transform = "translateX(0)"
-//     currentSlide = 1
-//
-//   }
-//
-// }
 
 /*
 
