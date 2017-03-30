@@ -21,8 +21,7 @@ __Goal: (a) Cover the basic architecture of a full stack application, (b) Unders
 
 ### Full Stack application
 - A full stack application is one where we have a client and a server and logic that exists in both
-- The definition of full stack application has gotten really grey over the last couple years or so as more and more libraries and methods are coming out
-- Refer back to the article that Gabe posted in slack last week about what it feels like to learn JavaScript in 2016
+- The definition of full stack application has gotten  grey over the last couple of years as more and more libraries and patterns are coming out
 - At it's core, a full stack app has these two parts and they communicate with each other in response to user input
 
 #### The Client
@@ -33,22 +32,32 @@ __Goal: (a) Cover the basic architecture of a full stack application, (b) Unders
 
 #### The Server
 - the server is probably what we actually think of when we think of web application development
-- this is where the majority of our logic will probably be and it's where we'll do things like persist data
+- this is where the majority of our logic will probably be and it's where we'll persist data and other related tasks
 
 #### Client and Server Relationship
 - There's a spectrum between the two
-- Before we had robust and powerful browsers, most computation and work in our application had to happen on the server
-- this meant most if not all actions on a web application required navigating to a new page and hitting the server and the server would return a new html document to the client
-- the only client to speak of was some javascript that responded to events
-- then in the history of JavaScript libraries starting coming out, starting with backbone and ember, that let us build a lot of business logic in to the front end
-- to the point where now you can construct a robust applications that is almost entirely a front end applications
+- Before we had robust and powerful browsers, most
+computation and work in our application had to happen on
+the server
+- this meant most if not all actions on a web
+application required navigating to a new page and
+hitting the server and the server would return a new
+html document to the client
+- the only client to speak of was some javascript that
+responded to events
+- then in the history of JavaScript libraries starting
+coming out, starting with backbone and ember, that let
+us build a lot of business logic in to the front end
+- to the point where now you can construct a robust
+applications that is almost entirely a front end
+applications
 
 #### Client and Server Review
 - The client is the part of the application that we send to the user to run in their browser
 - The server is the part of the application that happens on our servers
 - another way of referring to these is the front end and the back end
 - that sums up our discussion of the relationship between the client and the server
-- except that we need to talk about a really important aspect of any healthy relationship: communication
+- except that we need to talk about an important aspect of any healthy relationship: communication
 _make a joke about getting married ... ?_
 
 #### Communication between the Client and Server
@@ -56,9 +65,9 @@ _make a joke about getting married ... ?_
 - the client needs to be able to tell the server about it's needs and the server needs to be able to respond with which needs it can meet and which it can't _Sarah and my socks?_
 
 ### Hyper Text Transfer Protocol
-- like any really good communication style, HTTP is very structured
+- like any good communication style, HTTP is structured
 - we can be explicit about which requests we can receive and most importantly, which we can respond to
-- you've no doubt seen and worked with HTTP requests in your daily life
+- you've no doubt seen and worked with HTTP requests in your life
 - whenever you navigate to a webpage, you're making a http request and when the page loads you've received the HTTP response
 - A metaphor that is often used to describe this process is the USPS
   - we send in a request, we get back a response
