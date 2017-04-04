@@ -1,0 +1,24 @@
+<h1> Pokedex </h1>
+
+<h2> Types </h2>
+{{#if type }}
+<ul> 
+	{{#each type}}
+		<li>
+			<a href="/{{this.type}}"> {{this.type}} </a>
+		</li>
+	{{/each}}
+</ul>
+{{/if}}
+
+
+<h2> Pokemons </h2>
+{{#if pokemon }}
+<ul>
+	{{#each pokemon}}
+		<li>
+			<a href="/{{this.name}}"> {{this.name}} </a>
+		</li>
+	{{/each}}
+</ul>
+{{/if}}

@@ -19,6 +19,8 @@ Hint: think about DOM methods that we can call on DOM elements we've already pul
 
 */
 
+var jsGallery = document.querySelector('.js-gallery')
+jsGalleryItems = jsGallery.children
 
 
 
@@ -34,7 +36,8 @@ To get the width, try getBoundingClientRect() or offsetWidth.
 
 */
 
-
+slideCount = jsGalleryItems.length
+slideWidth = jsGalleryItems[0].clientWidth
 
 /*
 
@@ -51,6 +54,13 @@ Create a function called transitionSlide that, for now, just `console.log`'s 'Ca
 
 */
 
+// transitionSlide = function() {
+	
+// 	setInterval( function() {
+// 		console.log('Called!')
+// 	}, 5000)
+
+// }
 
 
 /*
@@ -73,13 +83,31 @@ Inside transitionSlide() we need to do two things:
 Hint: delta should always be a negative number
 */
 
+// transitionSlide = function() {
+	
+// 	if (currentSlide < slideCount) {
+		
+// 		jsGallery.style.transform = "translateX(-" + slideWidth*currentSlide + "px)"
+// 		currentSlide++
+
+// 	} else {
+
+// 		jsGallery.style.transform = "translateX(0)"
+// 		currentSlide = 1 
+
+// 	}
+// }
+
 
 /*
 
 Step 5:
-To setup - we need to comment out the timer we created in Step 3 and our transitionSlide function in Step 4. We don't need our timer anymore and we're goinog to rewrite our transitionSlide function below! Whoo hoo!
+To setup - we need to comment out the timer we created in Step 3 and our transitionSlide function 
+in Step 4. We don't need our timer anymore and we're goinog to rewrite our transitionSlide 
+function below! Whoo hoo!
 
 */
+
 
 
 /*
@@ -87,26 +115,39 @@ To setup - we need to comment out the timer we created in Step 3 and our transit
 Step 6:
 We're going to create an event and event handler on the .js-nav-list element.
 
-Create a variable called sliderNav and assign it to the .js-nav-list element. Then add an event listener for a click event and pass it a reference to the function transitionSlide (which we're going to rewrite below)
+Create a variable called sliderNav and assign it to the .js-nav-list element. 
+Then add an event listener for a click event and pass it a reference to the function 
+transitionSlide (which we're going to rewrite below)
 
 */
 
+sliderNav = document.querySelector('.js-nav-list')
+sliderNav.addEventListener('click', function( e ) {
+	transitionSlide(e)
+}) 
 
 
 /*
 
 Step 7:
-Declare a function called transitionSlide. transitionSlide takes 1 parameter, event (which is the event object).
+Declare a function called transitionSlide. transitionSlide takes 1 parameter, event 
+(which is the event object).
 
 Our transitionSlide function is going to be divided into three parts: Setup, Checks and Execution.
 
 1. Setup:
-We need to (a) prevent any default browser behavior and (b) get the direction from our event target and save it to a variable, called currentDirection.
+We need to (a) prevent any default browser behavior and (b) get the direction from 
+our event target and save it to a variable, called currentDirection.
 
 2. Checks:
-We need to check the current slide and calculate if there is a next slide in that direction. If current slide is the first slide and the current direction is left or if the current slide is the last slide and the direction is right, we shouldn't translate our slider gallery.
+We need to check the current slide and calculate if there is a next slide in that direction. 
+If current slide is the first slide and the current direction is left or if the current slide is 
+the last slide and the direction is right, we shouldn't translate our slider gallery.
 
-Create a conditional that will handle the cases where (a) the slide direction is left and the current slide is 0 and (b) the slide direction is right and the current slide is the number of slides. Your conditional should just `return` if either of these cases is met. Note: we have to explicit conditions that should be met.
+Create a conditional that will handle the cases where (a) the slide direction is left 
+and the current slide is 0 and (b) the slide direction is right and the current slide 
+is the number of slides. Your conditional should just `return` if either of these cases is met. 
+Note: we have to explicit conditions that should be met.
 
 3. Execution:
 We can transition our slide!
@@ -117,3 +158,33 @@ Then translate your slide, just like we did last time. Just like we did last tim
 
 
 */
+
+
+console.log(slideCount)
+
+
+currentSlide = 0
+
+transitionSlide = function(e) {
+	// set up 
+	e.preventDefault()
+	currentDirection = e.target.dataset.direction // 'left' or 'right'
+
+	// checks
+	if ( currentSlide=== 0 && currentDirection === 'left') {
+		return
+	} else if ( currentSlide === (slideCount-1) && currentDirection === 'right' ) {
+		return 
+	} else {
+		if (currentDirection === 'right') {
+			currentSlide++ 
+		} else { // if current direction is 'left'
+			currentSlide--
+		}
+
+		jsGallery.style.transform = "translateX(-" + slideWidth*currentSlide + "px)"
+
+	}
+
+
+}

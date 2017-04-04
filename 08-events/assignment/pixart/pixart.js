@@ -29,9 +29,12 @@ How we we create elements in JavaScript and add them to the page?
 
 createSquareElement = function() {
 	newSquare = document.createElement("DIV")
-	newSquare.className = "square"
+	newSquare.className = "square" // += 'square' will add square class to whatever classes newSquare has 
 	return newSquare
 }
+
+// // newer js
+// square.classList.add('square')
 
 canvas = document.querySelector("#canvas")
 for (i=0; i < 2500; i++) {
@@ -72,7 +75,8 @@ button.addEventListener('click' || 'keypress', function(e) {
 	// prevent browser's default behavior 
 	e.preventDefault()
 
-	brush.style.backgroundColor = inputBox.value
+	brush.style.backgroundColor = inputBox.value 
+	// brush.setAttribute('style', 'background: ' + currentColor)
 	currentColor = inputBox.value
 })
 

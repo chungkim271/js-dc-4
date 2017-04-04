@@ -1,0 +1,19 @@
+<h1> {{this.type}} </h1>
+
+
+<p> {{this.type}} is a type of pokemons. You can probably guess by its name what it is! </p>
+
+<p> Following are the pokemons that belong to this type </p>
+
+<ul> 
+	{{#each this.pokemons}}
+		<li>
+			<a href="/{{this}}"> {{this}} </a>
+		</li>
+	{{/each}}
+</ul>
+
+
+<p>
+	<a href="/"> Go Back to Pokedex </a>
+</p>

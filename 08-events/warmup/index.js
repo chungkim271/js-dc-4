@@ -122,7 +122,7 @@ transitionSlide = function() {
 	}
 }
 
-// setInterval(transitionSlide, 1000)
+setInterval(transitionSlide, 1000)
 
 /* 
 
