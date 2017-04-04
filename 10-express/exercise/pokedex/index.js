@@ -73,39 +73,34 @@ app.get('/', function( req, res ) {
 	res.render('home', data)
 })
 
-app.get('/:type', function(req, res) {
+app.get('/type/:type', function(req, res) {
 
 	var type = req.params.type
-	pokemonsByType = undefined
+	var pokemonsByType = undefined
 
 	// look through data.type to see if routed url is a pokemon type
 	// if so, make pokemonsByType the corresponding object in data.type
 	for (i=0; i<data.type.length; i++) {
 		if (data.type[i].type === type) {
 			pokemonsByType = data.type[i]
+			break
 		}
 	}
 
-	// issue: how do I assign multiple routings in one page (home.handlebars)?
-	// on home page, I have a list of pokemon types that needs to be routed to
-	// type.handlebars, and below it, a list of pokemons that needs to be rounted to 
-	// pokemon.handlebars. 
-	// for now, I'll do what feels like cheating-- if var type is not a string 
-	// denoting a type (~is a pokemon name) then pokemonsByType is undefined. 
-	// if pokemonByType is undefined, render using a differnt template. 
+	res.render('type', pokemonsByType)
 
-	if (pokemonsByType != undefined) {
+})
 
-		res.render('type', pokemonsByType)
 
-	} else {
+app.get('/pokemon/:name', function(req, res) {
 
-		var name = req.params.type
-		var pokemon = undefined
+		var name = req.params.name
+		var pokemon
 
 		for (i=0; i < data.pokemon.length; i++) {
 			if (name===data.pokemon[i].name) {
 				pokemon = data.pokemon[i]
+				break
 			}
 		}
 
@@ -121,8 +116,61 @@ app.get('/:type', function(req, res) {
 		// pokemon['evolvePoke'] = (evolvePokeIndex) ? data.pokemon[evolvePokeIndex].name : undefined
 
 		res.render('pokemon', pokemon)
-	}
+
 })
+
+// app.get('/:type', function(req, res) {
+
+// 	var type = req.params.type
+// 	var pokemonsByType = undefined
+
+// 	// look through data.type to see if routed url is a pokemon type
+// 	// if so, make pokemonsByType the corresponding object in data.type
+// 	for (i=0; i<data.type.length; i++) {
+// 		if (data.type[i].type === type) {
+// 			pokemonsByType = data.type[i]
+// 			break
+// 		}
+// 	}
+
+// 	// issue: how do I assign multiple routings in one page (home.handlebars)?
+// 	// on home page, I have a list of pokemon types that needs to be routed to
+// 	// type.handlebars, and below it, a list of pokemons that needs to be rounted to 
+// 	// pokemon.handlebars. 
+// 	// for now, I'll do what feels like cheating-- if var type is not a string 
+// 	// denoting a type (~is a pokemon name) then pokemonsByType is undefined. 
+// 	// if pokemonByType is undefined, render using a differnt template. 
+
+// 	if (pokemonsByType != undefined) {
+
+// 		res.render('type', pokemonsByType)
+
+// 	} else {
+
+// 		var name = req.params.type
+// 		var pokemon = undefined
+
+// 		for (i=0; i < data.pokemon.length; i++) {
+// 			if (name===data.pokemon[i].name) {
+// 				pokemon = data.pokemon[i]
+// 				break
+// 			}
+// 		}
+
+// 		var evolvePokeIndex = parseInt(pokemon.evolveTo, 10)-1
+// 		pokemon['evolvePoke'] = (evolvePokeIndex) ? data.pokemon[evolvePokeIndex].name : undefined
+
+// 		// // use dictionary id for routing
+// 		// var id = req.params.id
+// 		// var index = parseInt(id, 10)-1 
+// 		// var pokemon = data.pokemon[index]
+
+// 		// var evolvePokeIndex = parseInt(pokemon.evolveTo, 10)-1
+// 		// pokemon['evolvePoke'] = (evolvePokeIndex) ? data.pokemon[evolvePokeIndex].name : undefined
+
+// 		res.render('pokemon', pokemon)
+// 	}
+// })
 
 // app.get('/:name', function(req, res) {
 	
