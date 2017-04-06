@@ -8,11 +8,12 @@
 | Timing | Topic                                    |
 | ------ | ---------------------------------------- |
 | 5  min | Check In                                 |
-
-| 5  min | Break                                    |
-
-| 5  min | Break                                    |
-
+| 40 min | Review Express & Pokedex                 |
+| 20 min | Introduction to Databases & CRUD         |
+| 10 min | Break                                    |
+| 50 min | Databases & CRUD continued               |
+| 10 min | Break                                    |
+| 50 min | Guestbook Exercise                       |
 | 5  min | Closing Questions & Exit                 |
 
 ---
@@ -22,7 +23,7 @@
 | ---------- | ------------------------ |
 |     07     |   Intro to the DOM       |
 |     08     | Events                   |
-|     09     | Templating & Build Tools |
+|     09     | Templating &             |
 |     10     | Express                  |
 |   **11**   | **Databases & CRUD**     |
 |     11     | APIs                     |
@@ -33,8 +34,8 @@
 ## Homework Review: Interviews!
 - Count off 1 through 3
 - A question will come up here
-- One student will answers the question for 30 seconds
-- The group will discuss for 1 minute
+- One student will answers the question for one minute
+- The group will discuss for 2 minute
 
 
 --
@@ -48,6 +49,9 @@
 --
 ### 3. Describe (generally) the steps involved in setting up a basic web application using `express`.
 
+---
+## Homework Review
+Walk through on how to build the pokedex
 
 ---
 ## Class overview
@@ -109,19 +113,20 @@
 
 --
 ### CRUD: Create
-- `save`
+- `save()`
 
 --
 ### CRUD: Read
-- `find`
-- `findOne`
+- `find()`
+- `findOne()`
 
 --
 ### CRUD: Update
--
+- `update()`
 
 --
 ### CRUD: Delete
+- `remove()`
 
 ---
 ## Working with Databases

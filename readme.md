@@ -204,12 +204,13 @@ Today's class goes in depth on event driven development, responding to browser/u
 - [Slides](https://ga-students.github.io/js-dc-4/10-express)
 - [Assignment](10-express/assignment.md)
 - [Lesson Notes](10-express/lesson_plan.md)
+- [Lesson](https://www.youtube.com/watch?v=_7Xgg3XA4nk)
 
 
 ### Class 11: CRUD and Databases
 
 #### Learning Objectives
-- Understand the different types of databases and the basics of their differences
+- Understand the differences between different types of databases
 - Describe what CRUD operations are and how they are used
 - Describe an ORM
 - Set up a simple `Express` application that uses `Mongoose` as an ORM to connect to a `MongoDB` database
