@@ -9,8 +9,8 @@
     <div class="container">
       <h1>Weatherify</h1>
       <form id="searchForm">
-        <input type="text" name="city" placeholder="City" />
-        <input type="text" name="country" placeholder="Country (i.e. US)"/>
+        <input type="text" name="city" placeholder="City" value="london"/>
+        <input type="text" name="country" placeholder="Country (i.e. US)"/ value="uk">
         <input type="submit" value="Submit" />
       </form>
 
@@ -18,9 +18,8 @@
       </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-  	<script type="text/javascript" src="js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+
     <script id="weather-template" type="text/x-handlebars-template">
       {{#if city}}
         <h2>{{city}}, {{country}}</h2>
@@ -30,5 +29,7 @@
         <div class="clouds">{{clouds}}% Cloud Coverage</div>
       {{/if}}
     </script>
+
+    <script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>
