@@ -22,15 +22,21 @@ app.get('/', function( req, res ) {
   })
 })
 
+app.get('/newTodo', function( req, res ) {
+
+    res.render('todo/new', {})
+})
+
 
 app.post('/', function( req, res ) {
   var currentEntry = new Entry({
     todo: req.body.todo
   })
   currentEntry.time = Date()
-  
+
   currentEntry.save()
 
+  // this has one entry lag. 
   Entry.find({}, function( err, row ) {
     res.render('home', { row })
   })

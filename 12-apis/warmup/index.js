@@ -2,6 +2,10 @@ var express = require('express')
 var exphbs = require('express-handlebars')
 var bodyParser = require('body-parser')
 var path = require('path')
+var Entry = require('./models/entry.js')
+var mongoose = require('mongoose')
+
+mongoose.connect('mongodb://localhost:27017/quotebook') 
 
 var app = express()
 
@@ -41,7 +45,7 @@ app.get('/', function( req, res ) {
   res.render('home', data)
 
 })
-
+ 
 app
   .get('/new', function( req, res ) {
 
@@ -54,7 +58,7 @@ app
       id: data.quotes[ data.quotes.length - 1 ].id + 1,
       author: req.body.author,
       text: req.body.text
-    })
+    }) 
 
     res.redirect('/')
 

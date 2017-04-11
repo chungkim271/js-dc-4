@@ -8,10 +8,18 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.0"
+    "body-parser": "^1.17.1",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "express-hbs": "^1.0.4",
+    "hbs-form-helpers": "0.0.6",
+    "jsdom": "^9.12.0",
+    "mongoose": "^4.9.3",
+    "request": "^2.81.0"
   },
   "devDependencies": {
     "nodemon": "^1.10.2"
   },
+  "keywords": [],
   "description": ""
 }

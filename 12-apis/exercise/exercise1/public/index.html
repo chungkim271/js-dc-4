@@ -33,14 +33,35 @@
   <body>
     <button>Big Red Button</button>
     <div id="result"></div>
-    <script type="text/javascript">
+   <script type="text/javascript">
       var button = document.querySelector('button')
       var resultContainer = document.querySelector('#result')
 
+
       button.addEventListener('click', function( ) {
         // first AJAX call here:
-
+        makeRequest();
       })
+
+       // make the function
+       function makeRequest(url) {
+       // create instance of XMLHttpRequest object
+       var request = new XMLHttpRequest()
+
+        // declare a function to be called the onreadystatechange property of the request object
+        request.onreadystatechange = function() {
+          if ( request.readyState === 4 ) {
+            console.log('done!')
+
+            resultContainer.innerText = request.status
+          }
+        }      // now we initiate the request itself - it takes a HTTP request method and a URL
+        request.open('GET', 'index.html', true)
+        // this sends the response to the server, you can include data in the post - here we won't
+        request.send(null)
+
+       }
+
     </script>
   </body>
 </html>

@@ -1,0 +1,24 @@
+
+<h1> Welcome to our pokedex in progress! </h1>
+
+<a href="/database"> See pokemons in our database </a>
+
+<p> You can help expanding our database by looking up a pokemon and saving it in our database! </p>
+
+<form class="form" action="/" method="post">
+	<input type="text" name="name" value="">
+	<input type="submit" name="submit" value="Submit">
+</form>
+
+
+{{#if pokemon}}
+
+<ul>
+	<img src={{pokemon.img}} alt={{pokemon.name}}  style="width:304px;height:228px;">
+	<li> name: {{pokemon.name}} </li>
+	<li> type: {{pokemon.type}} </li>
+</ul>
+
+<button type="button">save to database</button>
+
+{{/if}}
