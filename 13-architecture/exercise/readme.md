@@ -8,9 +8,9 @@ The core features of HackerWall are:
   - Users can comment on each article
 
 Bonus features for HackerWall include:
+  - the ability to up-vote and down-vote posts
   - form validation (users can't submit comments or new posts with empty fields)
   - submit comments via ajax
-  - the ability to up-vote and down-vote posts
 
 Checkout the real [HackerNews](https://news.ycombinator.com/news) and play around with it to get a feel for it's feature set.
 
