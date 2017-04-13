@@ -243,7 +243,7 @@ Today's class goes in depth on event driven development, responding to browser/u
 - [Slides](https://ga-students.github.io/js-dc-4/13-architecture)
 - [Assignment](13-architecture/assignment.md)
 - [Lesson Notes](13-architecture/lesson_plan.md)
-
+- [Lesson](https://www.youtube.com/edit?o=U&video_id=n9ljXpAIpog)
 
 ### Class 14: Lab 2
 [Lab 2](14-lab02/readme.md)
