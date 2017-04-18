@@ -10,11 +10,6 @@
 - Closing Questions / Tying up loose ends
 - Exit Tickets
 
-## Final Project
-The assignment for today was to submit your final project idea. Today we're going to flush them out a together.
-
-We're going to break out in to groups - count 1 through 3. You'll present your idea to the group for 2 minutes, answering a specific set of questions in your presentation. Then your group will ask you questions.
-
 ## Authentication
 Authentication is the process of confirming and proving identity. In web applications, authentication refers to users identifying themselves through a login procedure.
 

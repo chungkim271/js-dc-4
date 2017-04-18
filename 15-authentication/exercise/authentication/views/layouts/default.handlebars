@@ -20,8 +20,11 @@
             </div>
 
             <ul class="nav navbar-nav navbar-right">
-                {{#if currentUser}}
-                    <li> <a href="/edit"> Hello, {{currentUser.username}} </a> </li>
+                {{#if user}}
+                    <li>
+                      <a href="/users/">Users</a>
+                    </li>
+                    <li> <a href="/users/{{user.username}}"> Hello, {{user.username}} </a> </li>
                     <li><a href="/logout">Log out</a></li>
                 {{else}}
                     <li><a href="/login">Log in</a></li>

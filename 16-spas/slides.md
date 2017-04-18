@@ -30,29 +30,6 @@
 ---
 ## Final Project
 
---
-### Break out and discuss
-
---
-### Format:
-1. Present your idea ( 2 minutes )
-2. Answer group questions ( 3 minutes )
-
---
-### Count 1 through 3
-
---
-### One person presents their idea ( 2 minutes )
-- What problem does your idea solve?
-- What features will your application have?
-- What technical challenges to you foresee with building this app?
-
---
-### Group Question Ideas ( 3 minutes )
-- What third-party libraries will you use?
-- How will you architect your applications?
-- What models will you use? what properties will they have?
-
 ---
 ### Authentication (reintroduction)
 Authentication is the process of confirming and proving identity. In web applications, authentication refers to users identifying themselves through a login procedure.

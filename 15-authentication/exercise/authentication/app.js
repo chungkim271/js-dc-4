@@ -1,6 +1,10 @@
 var express = require("express")
 var mongoose = require("mongoose")
 var hbs = require('express-handlebars')
+var cookieParser = require('cookie-parser')
+var bodyParser = require('body-parser')
+
+var routes = require('./routes/index')
 
 var app = express()
 mongoose.connect("mongodb://localhost:27017/peoplebook")
@@ -19,10 +23,15 @@ app.engine('handlebars', hbs({
     }
   }
 }))
-app.set('view engine', 'handlebars')
 
-app.use(routes)
+app.set('view engine', 'handlebars')
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(cookieParser())
+
+app.use('/', routes)
+
 
 app.listen(3000, function() {
-  console.log("Server started on port " + app.get("port"))
+  console.log("Server started on port 3000")
 })

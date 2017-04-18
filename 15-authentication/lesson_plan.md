@@ -14,8 +14,11 @@
 ## Lab Review
 
 ### Application walk through
-   - Architecture is similar to what we've seen so far
-   -
+
+### Final Project
+The assignment for today was to submit your final project idea. Today we're going to flush them out a together.
+
+We're going to break out in to groups - count 1 through 3. You'll present your idea to the group for 2 minutes, answering a specific set of questions in your presentation. Then your group will ask you questions.
 
 ## Middleware
    - Express is a framework for building web applications built on two things:
@@ -24,7 +27,6 @@
    - We've already seen routing - a lot! A lot of the lab involved routing.
    - middleware is/are functions that have access to the request object and response object and the next middleware function.
    - these functions are stored in an array, and called in order until a response is sent back to the client
-   - waterfall - each function is called in order, with the next function passed in as a parameter. The next function is called by the current function, or the whole chain is broken and the current function returns a response. _Visualize_
 
 ### Using Middleware
    - We can use middleware in a lot of different places and ways
@@ -54,35 +56,19 @@ app.get('/pages/:num', function( req, res, next ) {
 })
 ```
 
-The reason we're covering middleware now is twofold: (1) it's a really important part of Express and (2) we're going to be using middleware today to authenticate users in our sample application
-
+The reason we're covering middleware now is twofold:
+(1) it's a really important part of Express and, depending on the functionality of your final project, you should definitely look to see if someone has already written middleware that will handle some of the business logic for your application
+(2) we're going to be using middleware today to authenticate users in our sample application
 
 ## Authentication
 __Goal: provide a basic overview of authentication__
+Today's class is about authentication. We're going to touch on a related topic, which is authorization. We'll implement authentication but leave authorization for another time.
+
 Authentication is the process of confirming and proving identity. In web applications, authentication refers to users identifying themselves through a login procedure.
 
 Everyone will already be somewhat familiar with authentication, it's what happens when you sign in to Facebook or Twitter or Netflix. But signing-in is really only part of the whole story. There's a lot going on in an application that has authentication which we're going to cover today.
 
-So here is our challenge: we need to design a system that will take a user name and password once and then know from then on out what someone is allowed to do and see in our application.
 
-__Break out and think about how to do this__
-
-Process:
-- user types in user name and password and submits that to our server
-- server verifies the username and password and if it matches, creates a session for that user, otherwise it throws an error
-- the session keeps track of the logged in user
-
-### Break it down
-- we have a user model in our backend, which is going to have a bunch of fields but for now lets think of the username and password fields
-- when a new user is created, they enter a username and password that get submitted through a form to our server.
-- our server is going to `hash` the password. [See hashing in action](http://www.xorbin.com/tools/sha1-hash-calculator)
-- this `hash` is what gets stored in the database
-- a `hash` is extremely difficult and/or time-consuming to decrypt
-- when a user is logged in, a session is created for that user.
-- a session is an object that persists data beyond an http request
-  - data does not transfer or persist from one http request to the next unless we store it somewhere, like a database or the markup for the page itself
-  - this is where sessions come in
-  - object with a unique id, that id is saved as a cookie in the browser
 
 ## Passport
 We're going to use a library called `Passport` for all of this.
