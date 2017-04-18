@@ -1,0 +1,16 @@
+
+{{#each artists}}
+	<ul>
+		<a href="search/{{this.spotifyId}}">
+			<div>
+				<h3>{{this.name}}</h3>
+				{{#if this.img}}
+					<img src={{this.img.url}} style="width:304px;height:228px;">
+				{{/if}}
+				{{#if this.genres}}
+					<h4> Genres: {{this.genres}} </h4>
+				{{/if}}
+			</div>
+		</a>
+	</ul>
+{{/each}}
