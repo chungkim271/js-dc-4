@@ -27,35 +27,6 @@
 |     19     |   Presentations    |
 
 ---
-## User Experience Research
-
---
-### Wireframing
-Sketch and outline the views of our applications
-
---
-### How to Wireframe
-- hand drawn symbols for components of our application
-- we can layout these symbols however we like and test out different layouts
-- start broad and work your way in
-
---
-### Our first wireframe
-
---
-### Now you make one!
-
---
-### User Journeys
-Creating a map of how a user will navigate through and around our applications
-
---
-### Our first user journey
-
---
-### Now you make one!
-
----
 ## Deployment
 
 ---

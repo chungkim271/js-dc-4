@@ -10,22 +10,60 @@
 - Closing Questions / Tying up loose ends
 - Exit Tickets
 
-## Authentication
-Authentication is the process of confirming and proving identity. In web applications, authentication refers to users identifying themselves through a login procedure.
+## Final Project
+Start with two 20 minute exercises:
+  1. Wireframing
+  2. User Journeys
 
-### Break it down
-- we have a user model in our backend, which is going to have a bunch of fields but for now lets think of the username and password fields
-- when a new user is created, they enter a username and password that get submitted through a form to our server.
-- our server is going to `hash` the password. [See hashing in action](http://www.xorbin.com/tools/sha1-hash-calculator)
-- this `hash` is what gets stored in the database
-- a `hash` is extremely difficult and/or time-consuming to decrypt
-- when a user is logged in, a session is created for that user.
-- a session is an object that persists data beyond an http request
-  - data does not transfer or persist from one http request to the next unless we store it somewhere, like a database or the markup for the page itself
-  - this is where sessions come in
-  - object with a unique id, that id is saved as a cookie in the browser
+### User Experience Exercise
+__Quick UX/UI exercise to draw and iterate on final project__
+We're going to start class with two quick User Experience exercises that will help you think more holistically about your application.
 
-### Code along
+Each exercise we do is aimed at making the idea in your mind a little bit more clear so that when you go to start building, you have a plan of what it is you're building - what the finished product will be.
+
+Today we're going to be doing _wireframing_ and _user journeys_.
+
+__wireframing:__ sketch and outline the views of our applications, without necessarily thinking about styling yet
+
+__user journeys:__ creating a map of how a user will navigate through and around your application
+
+These two exercises are going to help us achieve two things:
+  1. understanding what views we'll have in our application and help us understand how each view is going to be structured and
+  2. understand the architecture of our application
+
+#### Wireframing
+Wireframing is the process of quickly sketching out the views of our applications
+
+The purpose is to quickly test out different ideas. Nothing we draw is final, we can throw anything away and start over. The goal is to come up with a layout and organization for the content of a specific view that will work the best.
+
+To do this we need to think about what each view is going to show and so what kind of information we're going to have on it.
+
+The best way to do this is to start broad and work our way down
+
+__See it in action:__
+- wireframe a view of your application
+- probably the farmer's market detail view
+- things to consider: what information do I want to show on this page:
+  - image, title, location, link to driving directions?
+
+__Class Activity:__
+- now everyone pick one potential view from their application and wireframe it
+- think about what information you might have on your view first
+- come up with three different ways of displaying that information
+
+#### User Journeys
+User Journey mapping the processes of mapping the flow of users through an application. This typically has a very specific goal, like getting them to sign up or become a member of your application or to get them to purchase your product.
+
+At their softer, more UX-ey level, they get in to a lot about who your actual users are by creating user personas. They also help you identify parts of your application that could be bottlenecks.
+
+At their more technical level, they'll basically translate into the routes and views of your application and how they all relate to each other.
+
+__See it in action:__
+- map out all the views of your application and how they'll relate to each other
+- start with the home page, search for farmer's markets by location, then open the view for a specific farmers markets
+
+__Class Activity:__
+- Everyone map out the navigation through their application
 
 
 ## Single Page Applications
@@ -50,4 +88,4 @@ What kind of logic might we want to push to the client?
 - to the point that users will find it frustrating to wait for a page refresh
 - for a long time building a single page app required not only a lot of work but what you'd end up with wasn't great
 - the first mainstream single page app was gmail
-- always been driving by the desire to provide a really fluid and interactive user experience
+- driven by the desire to provide a really fluid and interactive user experience

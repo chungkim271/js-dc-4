@@ -8,12 +8,10 @@
 | Timing | Topic                                    |
 | ------ | ---------------------------------------- |
 | 5  min | Check In                                 |
-| 20 min | Final Project                            |
-| 40 min | Authentication                           |
-| 5  min | Break                                    |
-| 20 min | Authentication                           |
-| 30 min | Single Page Applications                 |
-| 5  min | Break                                    |
+| 40 min | Final Project                            |
+| 10 min | Break                                    |
+| 50 min | Single Page Applications                 |
+| 10 min | Break                                    |
 | 50 min | Single Page Applications                 |
 | 5  min | Closing Questions & Exit                 |
 
@@ -30,15 +28,36 @@
 ---
 ## Final Project
 
----
-### Authentication (reintroduction)
-Authentication is the process of confirming and proving identity. In web applications, authentication refers to users identifying themselves through a login procedure.
+--
+## User Experience Research
+- Wireframing
+- User Journeys
 
 --
-### Breaking it down
+### Wireframing
+Sketch and outline the views of our applications
 
 --
-### Code along!
+### How to Wireframe
+- hand drawn symbols for components of our application
+- we can layout these symbols however we like and test out different layouts
+- start broad and work your way in
+
+--
+### Our first wireframe
+
+--
+### Now you make one!
+
+--
+### User Journeys
+Creating a map of how a user will navigate through and around our applications
+
+--
+### Our first user journey
+
+--
+### Now you make one!
 
 ---
 ## Single Page Applications
@@ -53,9 +72,13 @@ Authentication is the process of confirming and proving identity. In web applica
 
 --
 ### History
+- tied to the history and development of AJAX
+- have become the industry standard for building applications
+- driven by the desire to provide a fluid and interactive user experience
 
 --
-### Building an SPA
+## Building an SPA
+Lets build one!
 
 ---
 ## The end

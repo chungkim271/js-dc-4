@@ -260,6 +260,7 @@ Today's class goes in depth on event driven development, responding to browser/u
 - [Slides](https://ga-students.github.io/js-dc-4/15-authentication)
 - [Assignment](15-authentication/assignment.md)
 - [Lesson Notes](15-authentication/lesson_plan.md)
+- [Lesson](https://www.youtube.com/watch?v=FeEt9JgAtEo)
 
 
 ### Class 16: Single Page Applications
