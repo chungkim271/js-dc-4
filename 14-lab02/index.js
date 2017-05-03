@@ -161,7 +161,7 @@ app
           
           } else {
             
-            res.send(response)
+            //res.send(response)
 
             data = json.items
 
@@ -177,18 +177,20 @@ app
                 )
             }
 
+            //songs = findSongs(data[0].id)
             // show top 5 albums
-            var newArtist = {
+            // var newArtist = {
 
-              name: data[0].artists.name,
-              id: null,
-              spotifyId: data[0].artists.name,
-              albums: arr
+            //   name: data[0].artists.name,
+            //   id: null,
+            //   spotifyId: data[0].artists.name,
+            //   albums: arr
               
             
-            }
+            // }
 
-            res.send(newArtist)
+            res.send(findSongs(data[0].id))
+            // res.send(newArtist)
             //res.render('artist', newArtist)
           
           } 

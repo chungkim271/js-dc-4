@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Campaign Finance Viz</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <div id = "title">
+          <h1>Show Me the Campaign Money</h1>
+        </div>
+        <div id ="sub-title">
+          <p>Individual Donations to 2016 Presidential Candidates by State</p>
+        </div>
+      </div>
+    </header>
+    <main id="app">
+
+    <script src="app/index.js"></script> 
+
+    </main>
+    <footer>
+      <div class="wrapper">
+        <p>Created by <em>Ch000ng</em></p>
+        <p>Copyright 2017</p>
+      </div>
+    </footer>
+
+  <script id="template-candidateList" type="text/x-handlebars-template">
+        <div style="height: 200px;">
+        </div>
+        <div>
+          <ul class="js-list" style="display:inline-block; ">
+            {{#each candidate}}
+            <div class="js-candidate">
+                <p> {{this.name}} </p>
+            </div>  
+            {{/each}}
+          </ul>
+        </div>
+  </script>
+
+  <script id="template-mapViz" type="text/x-handlebars-template">
+        <div>
+          <h2>Candidates</h2>
+          <ul class="js-list">
+            {{#each candidate}}
+              <li>
+                {{ this.name}} {{ this.candidate_id}}
+              </li>
+              <map-container>
+              where d3 goes
+              </map-container>
+              {{#each this.otherCandidates}}
+                  <div class="js-candidate">
+                      <p> {{this}} </p>
+                  </div>
+              {{/each}}
+            {{/each}} 
+          </ul>
+        </div>
+  </script>
+
+  <script id="template-newComment" type="text/x-handlebars-template">
+
+      <div class="js-newComment">
+        <h2>Share your thoughts on this viz!</h2>
+        <form class="js-newComment">
+          <p>
+            <label for="title">Name</label>
+            <input type="text" name="title">
+          </p>
+          <p>
+            <label for="comment">Comment</label>
+            <textarea name="comment" cols="100" rows="2"></textarea>
+          </p>
+          <button class="js-submit" type="submit">Post</button>
+        </form>
+      </div>
+  </script>
+
+  <script id="template-comments" type="text/x-handlebars-template">
+     <div class="js-comments">   
+        <h3>Your Thoughts</h3>
+        {{#each comments}}
+          <div class="c-comment">
+            <p>
+              {{this.comment}}
+            </p>
+            <span>
+              by {{this.author}}
+            </span>
+          </div>
+        {{/each}}
+    </div>
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="https://d3js.org/d3-array.v1.min.js"></script>
+  <script src="https://d3js.org/d3-collection.v1.min.js"></script>
+  <script src="https://d3js.org/d3-color.v1.min.js"></script>
+  <script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+  <script src="https://d3js.org/d3-format.v1.min.js"></script>
+  <script src="https://d3js.org/d3-scale.v1.min.js"></script>
+  <script>
+
+  var x = d3.scaleLinear();
+
+  </script>
+  <script src="index.js"></script>  
+
+
+  </body>
+</html>
+
+
